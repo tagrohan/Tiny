@@ -11,7 +11,15 @@ public class HomeController {
    @PostMapping("/get_url")
    public String convert(@RequestParam("url") String originalUrl) {
 
+      String shortUrl = generateCode(originalUrl);
+
       // logic of conversion goes here
+      return "";
+   }
+
+   private String generateCode(String originalUrl) {
+
+      // code will be generated from here or may be from service class
       return "";
    }
 }
